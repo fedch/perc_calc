@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<!DOCTYPE HTML>
+<html>
+  <body>
+    This is your friendly percentage calculator.
+    <br>
+    What would you like to use today?
+    <br>
+    <a href="{{ url_for('increase') }}">Find the percentage increase/decrease</a>
+    <br>
+    <a href="{{ url_for('relative_perc') }}">Find out what percentage one number is of the other</a>
+    <br>
+    <a href="{{ url_for('gst_calculator') }}">GST calculator</a>
+  </body>
+</html>
+
+{% endblock %}
